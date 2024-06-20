@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Sale Price Hider",
+  "version": "1.0",
+  "description": "Hides the original price of Amazon items that are on sale",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://www.amazon.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "48": "icon.png"
+  }
+}
+
